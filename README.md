@@ -1,3 +1,21 @@
+# Wyoming Satellite for Fedora 42
+
+Remote voice satellite using the Wyoming protocol, optimized for Fedora Server 42.
+
+## Installation
+
+Clone the repository and run the installation script:
+
+```bash
+git clone https://github.com/KeithSBB/wyoming-satellite-fedora42.git
+cd wyoming-satellite-fedora42
+git checkout fedora-42-wyoming
+bash install.sh
+
+The rest of this readme is the original rasspy
+
+
+
 # Wyoming Satellite
 
 Remote voice satellite using the [Wyoming protocol](https://github.com/rhasspy/wyoming).
