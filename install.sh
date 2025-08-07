@@ -8,10 +8,11 @@ sudo dnf install -y python3 python3-pip alsa-utils
 sudo useradd -r -s /bin/false -d /usr/local/share/wyoming-satellite wyoming 2>/dev/null || true
 
 # Create directories
-sudo mkdir -p /usr/local/share/wyoming-satellite/{wyoming_satellite,config,script,.venv}
+sudo mkdir -p /usr/local/share/wyoming-satellite/{wyoming_satellite,config,sounds, script,.venv}
 sudo cp -r wyoming_satellite/*.py /usr/local/share/wyoming-satellite/wyoming_satellite/
 sudo cp pyproject.toml /usr/local/share/wyoming-satellite/
 sudo cp script/run /usr/local/share/wyoming-satellite/script/
+sudo cp sounds/* /usr/local/share/wyoming-satellite/sounds/
 
 # Set permissions
 sudo chown -R wyoming:wyoming /usr/local/share/wyoming-satellite
